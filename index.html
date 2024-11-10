@@ -14,7 +14,6 @@
 
 <body>
 
-
     <div class="loading">
         <div class="load-anim">
             <img src="/assets/img/sunny-outline.svg" class="rotating">
@@ -30,7 +29,8 @@
     
     <div class="background toload">
         <video autoplay muted loop id="forest">
-            <source src="/assets/vid/forest.webm" type="video/webm">
+            <source src="/assets/vid/forest.webm" class="toload" type="video/webm">
+            <source src="/assets/vid/forest.mp4"  class="toload" type="video/mp4">
         </video>
     </div>
 
@@ -96,7 +96,7 @@
 
         setTimeout(function () {    
             loaded()
-        }, 7000);
+        }, 20000);
 
         function loaded(){
             setTimeout(function () {    

@@ -19,8 +19,8 @@
 
 .loading, .pop-up{
     background-color: #000000;
-    height: 100vh;
-    width: 100vw;
+    height: 100dvh;
+    width: 100dvw;
     position: absolute;
     z-index: 99;
     display: flex;
@@ -40,12 +40,12 @@
 }
 .loading img{
     filter: invert(100%);
-    width: 10vh;
+    width: 10dvh;
 }
 .loading p{
     opacity: 0.3;
-    font-size: 1.2vh;
-    padding: 1vh;
+    font-size: 1.2dvh;
+    padding: 1dvh;
 }
 
 .pop-up{
@@ -54,8 +54,8 @@
 }
 
 .background{
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     position: absolute;
     z-index: -1;
     pointer-events:none;
@@ -64,8 +64,8 @@
     align-items: center;
 }
 .background video{
-    width: 90vh;
-    height: 100vh;
+    width: 90dvh;
+    height: 100dvh;
 }
 body::before{
     content: " ";
@@ -84,9 +84,9 @@ body::before{
 }
 
 body{
-    height: 100vh;
+    height: 100dvh;
     background-color: #000000;
-    width: 75vh;
+    width: 75dvh;
     margin: 0 auto;
     display: flex;  
     flex-direction: column;
@@ -104,26 +104,26 @@ a:hover, button:hover{
 }
 
 h1{
-    font-size: 5vh;
+    font-size: 5dvh;
 }
 
 header{
-    height: 35vh;
-    padding: 1vh;
+    height: 35dvh;
+    padding: 1dvh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 header img{
-    width: 70vh;
+    width: 70dvh;
 }
 header ion-icon{
     position: absolute;
-    font-size: 3vh;
+    font-size: 3dvh;
     top: 0;
     right: 0;
-    padding: 0.5vh;
+    padding: 0.5dvh;
     z-index: 98;
 }
 
@@ -135,20 +135,20 @@ main{
     justify-content: center;
 }
 .rhombus{
-    width: 50vh;
+    width: 50dvh;
     position: absolute;
     z-index: -1;
     mix-blend-mode: soft-light;
 }
 
 main iframe{
-    width: 40vh;
-    height: 30vh;
+    width: 40dvh;
+    height: 30dvh;
     background-color: #fff;
 }
 
 .contact{
-    font-size: 2vh;
+    font-size: 2dvh;
     width: 100%;
 }
 .contact, ul{
@@ -156,11 +156,11 @@ main iframe{
     flex-direction: row;
     align-items: center;
     margin: 0 auto;
-    padding: 1vh;
+    padding: 1dvh;
 }
 li{
-    margin-left: 6vh;
-    margin-right: 6vh;
+    margin-left: 6dvh;
+    margin-right: 6dvh;
     transition: opacity .2s;
     opacity: 0.8;
 }
@@ -170,22 +170,22 @@ li:hover{
 
 /* glowing govno */
 li a, .copy, header img, .rhombus{
-    filter: drop-shadow(0 0 1.5vh rgba(255, 255, 255, 0.9));
+    filter: drop-shadow(0 0 1.5dvh rgba(255, 255, 255, 0.9));
 }
 
 .copy{
-    font-size: 4vh;
+    font-size: 4dvh;
     -webkit-user-select:text;
     -ms-user-select: text;
     user-select: text;
 }
 .copy ion-icon{
-    padding: 2vh;
-    font-size: 3vh;
+    padding: 2dvh;
+    font-size: 3dvh;
 }
 .close{
-    font-size: 2vh;
-    padding: 1vh;
+    font-size: 2dvh;
+    padding: 1dvh;
     opacity: 0.7;
 }
 
@@ -245,20 +245,20 @@ li a, .copy, header img, .rhombus{
         width: 100%;
     }
     li{
-        margin-left: 6vw;
-        margin-right: 6vw;
+        margin-left: 6dvw;
+        margin-right: 6dvw;
     }
     main iframe{
-        width: 55vw;
+        width: 55dvw;
     }
     .rhombus{
-        width: 65vw;
+        width: 65dvw;
     }
     .copy{
-        font-size: 7vw;
+        font-size: 7dvw;
     }
     .background video{
-        width: 100vw;
+        width: 100dvw;
         object-fit: fill;
     }
 }
@@ -267,12 +267,12 @@ li a, .copy, header img, .rhombus{
 
 @media screen and (max-width: 600px){
     .rhombus{
-        width: 100vw;
+        width: 100dvw;
     }
     main iframe{
-        width: 70vw;
+        width: 70dvw;
     }
     .contact{
-        font-size: 4.1vw;
+        font-size: 4.1dvw;
     }
 }
